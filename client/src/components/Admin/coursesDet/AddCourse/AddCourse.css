@@ -1,0 +1,58 @@
+.admin-dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    
+    margin: 0px;
+}
+.admin-main{
+    background-color: lab(96.19% 0.01 -0.01);
+    
+}
+.admin-card{
+    background-color: #784c4c;
+    padding: 40px;
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h4{
+    text-align: center;
+}
+.admin-dashboard{
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+}
+.btns{
+    background-color: aliceblue;
+    color: black;
+    margin: 10px;
+    border-radius: 8px;
+}
+.outBtns{
+    background-color: #784c4c;
+    color: white;
+    margin: 10px;
+    border-radius: 8px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.inputs{
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+    width: 80%;
+    margin-bottom: 16px; 
+}
+h2{
+    margin-top: 0px;
+}

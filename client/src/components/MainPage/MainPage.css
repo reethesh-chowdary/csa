@@ -1,0 +1,22 @@
+h1{
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.initial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.visibility{
+    display: none;
+}
+.course-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+    width: 100%;
+}

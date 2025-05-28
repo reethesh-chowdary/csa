@@ -1,0 +1,17 @@
+.user-card-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.btns{
+    background-color: aliceblue;
+    color: black;
+    margin: 10px;
+    border-radius: 8px;
+}
+h4{
+    text-align: center;
+    margin-left: 20px;
+}
