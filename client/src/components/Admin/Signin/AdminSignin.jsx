@@ -20,7 +20,8 @@ function AdminSignin() {
                 alert('Signin successful');
                 console.log(response.data);
                 localStorage.setItem('Admintoken', response.data.token);
-                navigate('/admin/dashboard');
+                navigate('/');
+                window.location.reload();
                 
             } else {
                 alert('Signin failed');
