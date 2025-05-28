@@ -2,7 +2,7 @@ import React from 'react';
 import './Adminperspective.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import AdminCard from './AdminCard/AdminCard';
+import AdminCard from './AdminCard/AdminCard.jsx';
 
 function Adminperspective() {
   const [courseData, setCourseData] = useState([]);
