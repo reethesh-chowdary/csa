@@ -21,7 +21,7 @@ function AdminSignin() {
                 console.log(response.data);
                 localStorage.setItem('Admintoken', response.data.token);
                 navigate('/admin/dashboard');
-                window.location.reload();
+                
             } else {
                 alert('Signin failed');
             }

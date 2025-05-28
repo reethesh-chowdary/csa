@@ -23,7 +23,6 @@ function UserSignin() {
                 console.log(response.data);
                 localStorage.setItem('Usertoken', response.data.token);
                 navigate('/user/dashboard');
-                window.location.reload();
             } else {
                 alert('Signin failed');
             }
