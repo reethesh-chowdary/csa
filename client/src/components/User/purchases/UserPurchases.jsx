@@ -7,7 +7,7 @@ function UserPurchases() {
 
   async function preview() {
     try {
-      const response = await axios.get('http://localhost:5005/user/purchases', {
+      const response = await axios.get('https://csa-dmbk.onrender.com/user/purchases', {
         headers: {
           token: localStorage.getItem('Usertoken')
         }

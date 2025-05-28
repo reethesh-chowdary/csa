@@ -2,14 +2,14 @@ import React from 'react';
 import './Adminperspective.css';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import AdminCard from './adminCard/AdminCard';
+import AdminCard from './AdminCard/AdminCard';
 
 function Adminperspective() {
   const [courseData, setCourseData] = useState([]);
 
   async function preview() {
     try {
-      const response = await axios.get('http://localhost:5005/admin/course/bulk', {
+      const response = await axios.get('https://csa-dmbk.onrender.com/admin/course/bulk', {
         headers: {
           token: localStorage.getItem('Admintoken')
         }

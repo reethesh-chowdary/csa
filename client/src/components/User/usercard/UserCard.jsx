@@ -7,7 +7,7 @@ function UserCard(props) {
     const { course } = props;
     async function onPurchase() {
         try {
-            const response = await axios.post(`http://localhost:5005/courses/purchase?courseId=${course._id}`,{}, {
+            const response = await axios.post(`https://csa-dmbk.onrender.com/courses/purchase?courseId=${course._id}`,{}, {
                 headers : {
                     token: localStorage.getItem('Usertoken')}
                  })

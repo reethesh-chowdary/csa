@@ -7,7 +7,7 @@ function UserPerspective() {
 
   async function preview() {
     try {
-      const response = await axios.get('http://localhost:5005/courses/', {
+      const response = await axios.get('https://csa-dmbk.onrender.com/courses/', {
         headers: {
           token: localStorage.getItem('Usertoken')
         }

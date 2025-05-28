@@ -20,7 +20,7 @@ function AdminCard(props) {
     async function onDelete() {
         setCourseId(course._id.toLocaleString());
         try {
-            const response = await axios.delete(`http://localhost:5005/admin/deletecourse?courseId=${courseId}`, {
+            const response = await axios.delete(`https://csa-dmbk.onrender.com/admin/deletecourse?courseId=${courseId}`, {
                 headers: {
                     token: localStorage.getItem('Admintoken')
                 }
@@ -37,7 +37,7 @@ function AdminCard(props) {
     async function onEdit() {
         setCourseId(course._id);
         try {
-            const response = await axios.get(`http://localhost:5005/admin/editcourse?courseId=${courseId}`, {
+            const response = await axios.get(`https://csa-dmbk.onrender.com/admin/editcourse?courseId=${courseId}`, {
                 headers: {
                     token: localStorage.getItem('Admintoken')
                 }

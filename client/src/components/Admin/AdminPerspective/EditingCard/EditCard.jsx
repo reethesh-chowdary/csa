@@ -44,7 +44,7 @@ function EditCard() {
 
     try {
       const response = await axios.put(
-        `http://localhost:5005/admin/updatecourse?courseId=${courseId}`,
+        `https://csa-dmbk.onrender.com/admin/updatecourse?courseId=${courseId}`,
         details,
         {
           headers: {

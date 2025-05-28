@@ -29,7 +29,7 @@ function AddCourse() {
 
         try {
             const response = await axios.post(
-                'http://localhost:5005/admin/addcourse',
+                'https://csa-dmbk.onrender.com/admin/addcourse',
                 details,
                 {
                     headers: {

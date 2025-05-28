@@ -5,7 +5,7 @@ import './GetCourses.css';
 function GetCourses() {
     const [courseData,setCourseData] = useState([]);
     async function preview() {
-            const response = await axios.get('http://localhost:5005/courses/');
+            const response = await axios.get('https://csa-dmbk.onrender.com/courses/');
             const {courses} = await response.data;
             setCourseData(courses);
         }

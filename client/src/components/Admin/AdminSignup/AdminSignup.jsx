@@ -16,7 +16,7 @@ function AdminSignup() {
             password: password
         }
         try {
-            const response = await axios.post('http://localhost:5005/admin/signup', details)
+            const response = await axios.post('https://csa-dmbk.onrender.com/admin/signup', details)
             if (response.status === 200) {
                 alert('Signup successful')
                 console.log(response.data)
