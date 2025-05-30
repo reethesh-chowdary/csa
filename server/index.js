@@ -3,7 +3,6 @@ const mongoose = require("mongoose")
 const path = require("path");
 const app = express() 
 const cors = require("cors");
-const __dirname = path.resolve();
 app.use(cors());
 
 
@@ -22,14 +21,6 @@ const {adminRouter} = require("./routes/admin.js")
 app.use("/user",userRouter);
 app.use("/courses",courseRouter)
 app.use("/admin",adminRouter)
-
-// ✅ Static folder for frontend
-app.use(express.static(path.join(__dirname, "../client/dist")));
-
-// ✅ Wildcard route for React Router
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
-});
 
 async function main(){
     await mongoose.connect(process.env.MONGO_URL)
