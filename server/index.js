@@ -18,15 +18,9 @@ const {adminRouter} = require("./routes/admin.js")
 
 
   
-app.use(express.static(path.join(__dirname, "../client/dist")));
 app.use("/user",userRouter);
 app.use("/courses",courseRouter)
 app.use("/admin",adminRouter)
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
-// });
-
-
 
 async function main(){
     await mongoose.connect(process.env.MONGO_URL)
